@@ -8,7 +8,7 @@ import jp from 'jsonpath';
 import { readConfig, readInput } from './common.js';
 
 function usage() {
-  console.log(`usage:\n  ${path.basename(process.argv0)} <config-file> <input-file>`);
+  console.log(`usage:\n  ${path.basename(process.argv[1])} <config-file> <input-file>`);
 }
 
 async function main() {
@@ -29,7 +29,7 @@ async function main() {
   const document = xml.create(options);
   createElement(config.document.root, document, input);
 
-  console.log(document.toString({ prettyPrint: true }));
+  console.log(document.toString({ prettyPrint: true, indent: '\t' }));
 }
 
 function createElement(config: any, root: any, context: any) {

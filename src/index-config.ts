@@ -7,10 +7,11 @@ import { readXML } from './common.js';
 enum NodeType {
   ELEMENT_NODE = 1,
   TEXT_NODE = 3,
+  COMMENT_NODE = 8,
 }
 
 function usage() {
-  console.log(`usage:\n  ${path.basename(process.argv0)} <xml-sample-file> <config-output-path>`);
+  console.log(`usage:\n  ${path.basename(process.argv[1])} <xml-sample-file> <config-output-path>`);
 }
 
 async function main() {
@@ -54,6 +55,9 @@ function getElement(node: Node) {
     } else {
       const chd = [];
       for (const child of element.childNodes) {
+        if (child.nodeType === NodeType.COMMENT_NODE) {
+          continue;
+        }
         chd.push(getElement(child))
       }
       if (chd.length > 0) {

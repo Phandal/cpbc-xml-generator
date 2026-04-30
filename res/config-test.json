@@ -1188,9 +1188,6 @@
                               ]
                             },
                             {
-                              "name": "#comment"
-                            },
-                            {
                               "name": "n1:Participant",
                               "children": [
                                 {
@@ -1238,9 +1235,6 @@
                                   ]
                                 }
                               ]
-                            },
-                            {
-                              "name": "#comment"
                             },
                             {
                               "name": "n1:Participant",
@@ -1296,9 +1290,6 @@
                               ]
                             },
                             {
-                              "name": "#comment"
-                            },
-                            {
                               "name": "n1:Participant",
                               "children": [
                                 {
@@ -1350,9 +1341,6 @@
                                   ]
                                 }
                               ]
-                            },
-                            {
-                              "name": "#comment"
                             },
                             {
                               "name": "n1:Participant",
@@ -1475,9 +1463,6 @@
                                   ]
                                 }
                               ]
-                            },
-                            {
-                              "name": "#comment"
                             },
                             {
                               "name": "n1:Participant",
