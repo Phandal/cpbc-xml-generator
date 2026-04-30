@@ -1,0 +1,1609 @@
+{
+  "name": "TODO_NAME",
+  "version": "0.0.1",
+  "document": {
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "root": {
+      "name": "soap:Envelope",
+      "attributes": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xmlns:cuns": "http://calpers.ca.gov/PSR/CommonUtilitiesV1",
+        "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/"
+      },
+      "children": [
+        {
+          "name": "soap:Header",
+          "children": [
+            {
+              "name": "cuns:HeaderInfo",
+              "attributes": {
+                "xmlns:cuns": "http://calpers.ca.gov/PSR/CommonUtilitiesV1"
+              },
+              "children": [
+                {
+                  "name": "cuns:InterfaceTypeId",
+                  "text": "10006"
+                },
+                {
+                  "name": "cuns:BusinessPartnerId",
+                  "text": "1112223344"
+                },
+                {
+                  "name": "cuns:SchemaVersion",
+                  "text": "1.0"
+                },
+                {
+                  "name": "cuns:DateTime",
+                  "text": "2009-05-05T14:12:03"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "soap:Body",
+          "children": [
+            {
+              "name": "n1:RetirementAndPayrollTransactions",
+              "attributes": {
+                "xsi:schemaLocation": "http://calpers.ca.gov/PSR/PayrollRetirementV1 PayrollRetirementV1.xsd",
+                "xmlns:cuns": "http://calpers.ca.gov/PSR/CommonUtilitiesV1",
+                "xmlns:n1": "http://calpers.ca.gov/PSR/PayrollRetirementV1",
+                "xmlns:rhtns": "http://calpers.ca.gov/PSR/RetirementHealthTransactionsV1",
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+              },
+              "children": [
+                {
+                  "name": "n1:EmployerPayrollReport",
+                  "children": [
+                    {
+                      "name": "n1:Employer",
+                      "children": [
+                        {
+                          "name": "n1:EmployersCalPERSId",
+                          "text": "1112223344"
+                        },
+                        {
+                          "name": "n1:Report",
+                          "children": [
+                            {
+                              "name": "n1:ReportPeriodBeginDate",
+                              "text": "2019-03-01"
+                            },
+                            {
+                              "name": "n1:ReportPeriodEndDate",
+                              "text": "2019-03-31"
+                            },
+                            {
+                              "name": "n1:ProgramType",
+                              "text": "CPE"
+                            },
+                            {
+                              "name": "n1:TestReport",
+                              "text": "true"
+                            },
+                            {
+                              "name": "n1:ReportType",
+                              "text": "REG"
+                            },
+                            {
+                              "name": "n1:PayrollScheduleType",
+                              "text": "MON"
+                            },
+                            {
+                              "name": "n1:ReportCounter",
+                              "children": [
+                                {
+                                  "name": "n1:RecordType",
+                                  "text": "PAY"
+                                },
+                                {
+                                  "name": "n1:RecordTypeCount",
+                                  "text": "19"
+                                },
+                                {
+                                  "name": "n1:RecordTypeTotal",
+                                  "text": "2197.02"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:ReportCounter",
+                              "children": [
+                                {
+                                  "name": "n1:RecordType",
+                                  "text": "SCP"
+                                },
+                                {
+                                  "name": "n1:RecordTypeCount",
+                                  "text": "3"
+                                },
+                                {
+                                  "name": "n1:RecordTypeTotal",
+                                  "text": "306.54"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:ReportCounter",
+                              "children": [
+                                {
+                                  "name": "n1:RecordType",
+                                  "text": "OPR"
+                                },
+                                {
+                                  "name": "n1:RecordTypeCount",
+                                  "text": "1"
+                                },
+                                {
+                                  "name": "n1:RecordTypeTotal",
+                                  "text": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:PayrollReportName",
+                              "text": "Sample Payroll 1 "
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "3333333333"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Jeskeran"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "H"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Wynbrandt"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "98745621"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "17.80"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "2796.22"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "55.92"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "223.70"
+                                        },
+                                        {
+                                          "name": "n1:SurvivorContribution",
+                                          "text": "2.00"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "1234561"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "10.80"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "796.22"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "5.74"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "50.00"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "1212131512"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Shantera"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Ataee"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "22.06"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "3206.05"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "64.12"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "256.48"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:ServiceCreditPurchaseDeduction",
+                                      "children": [
+                                        {
+                                          "name": "n1:TaxedMemberPaidContributionOrDeduction",
+                                          "text": "50.29"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "14.00"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-01-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-01-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "RSC"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:SpecialCompensation",
+                                          "children": [
+                                            {
+                                              "name": "n1:SpecialCompensationCategory",
+                                              "text": "SSI"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationType",
+                                              "text": "UAA"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationAmount",
+                                              "text": "200.00"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "n1:SpecialCompensation",
+                                          "children": [
+                                            {
+                                              "name": "n1:SpecialCompensationCategory",
+                                              "text": "SAP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationType",
+                                              "text": "SDD"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationAmount",
+                                              "text": "81.39"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "3.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "16.70"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2008-07-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2008-07-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "RSA"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "22.63"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "85.69"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "1.71"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "6.86"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "8585858585"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Maddysyn"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Breannon Lucas"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Bork"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "MTY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "2010.34"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "2010.34"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "40.21"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "160.83"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2008-02-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2008-12-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "RSC"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:SpecialCompensation",
+                                          "children": [
+                                            {
+                                              "name": "n1:SpecialCompensationCategory",
+                                              "text": "ICP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationType",
+                                              "text": "BON"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationAmount",
+                                              "text": "788.43"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "15.77"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "63.07"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "4756456789"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Dollitta"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Lucida"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Elsaesser"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "7979794578"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "20.97"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "2428.80"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "48.58"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "194.30"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2009-04-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2009-04-30"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "PPA"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "7979794578"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "20.97"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "309.31"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "30.93"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "3878546897"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Zorahayda"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Johnk"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Bacosa"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "6881111"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "23.15"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "3750.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:SpecialCompensation",
+                                          "children": [
+                                            {
+                                              "name": "n1:SpecialCompensationCategory",
+                                              "text": "ICP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationType",
+                                              "text": "VEP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationAmount",
+                                              "text": "302.82"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "n1:SpecialCompensation",
+                                          "children": [
+                                            {
+                                              "name": "n1:SpecialCompensationCategory",
+                                              "text": "EDP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationType",
+                                              "text": "PPP"
+                                            },
+                                            {
+                                              "name": "n1:SpecialCompensationAmount",
+                                              "text": "35.19"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "75.70"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "333.10"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "6532032"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "15.52"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "1620.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TotalHoursWorked",
+                                          "text": "32"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2009-04-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2009-04-30"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "PPA"
+                                        },
+                                        {
+                                          "name": "n1:AppointmentId",
+                                          "text": "6881111"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "15.52"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "162.96"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "16.30"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "4512451245"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Lawneta"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Johnk Hickey"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Shaw"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:DivisionCalPERSId",
+                                          "text": "1111111111"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "DLY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "267.00"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "5340.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeDaysPerWeek",
+                                          "text": "5.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "534.00"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "6666663333"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Teonona"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Katrece"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "McFarlane"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPN"
+                                        },
+                                        {
+                                          "name": "n1:DivisionCalPERSId",
+                                          "text": "7778889994"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "MTY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "10.00"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "300.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TotalHoursWorked",
+                                          "text": "50"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2009-02-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2009-02-28"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "PPN"
+                                        },
+                                        {
+                                          "name": "n1:DivisionCalPERSId",
+                                          "text": "7778889994"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType",
+                                          "text": "HRY"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "12.00"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "480.00"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "40.00"
+                                        },
+                                        {
+                                          "name": "n1:TotalHoursWorked",
+                                          "text": "30"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "#comment"
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "3336665469"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Crediton"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Ekokobe"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:ServiceCreditPurchaseDeduction",
+                                      "children": [
+                                        {
+                                          "name": "n1:TaxedMemberPaidContributionOrDeduction",
+                                          "text": "50.29"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "#comment"
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "7777777777"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Lawneta"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "L"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Teonona"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:ServiceCreditPurchaseDeduction",
+                                      "children": [
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "191.96"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "#comment"
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "1111219804"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Katrece"
+                                    },
+                                    {
+                                      "name": "n1:MiddleName",
+                                      "text": "Bayleaf"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Elsaesser"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:DeductionForOverpaymentReceivable",
+                                      "children": [
+                                        {
+                                          "name": "n1:TaxedMemberPaidContributionOrDeduction",
+                                          "text": "500.00"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "#comment"
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "8528528522"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Damen"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Ekroll"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPR"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-02-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-02-28"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "PPA"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredMemberPaidContributionOrDeduction",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TaxDeferredEmployerPaidMemberContribution",
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "#comment"
+                            },
+                            {
+                              "name": "n1:Participant",
+                              "children": [
+                                {
+                                  "name": "n1:ParticipantInfo",
+                                  "children": [
+                                    {
+                                      "name": "n1:ParticipantsCalPERSId",
+                                      "text": "9696858588"
+                                    },
+                                    {
+                                      "name": "n1:FirstName",
+                                      "text": "Conolori"
+                                    },
+                                    {
+                                      "name": "n1:LastName",
+                                      "text": "Flaggerem"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-03-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-03-31"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "EPN"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TotalHoursWorked",
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "n1:ParticipantRecordDetails",
+                                  "children": [
+                                    {
+                                      "name": "n1:EarnedPeriodDetails",
+                                      "children": [
+                                        {
+                                          "name": "n1:RecordPeriodBeginDate",
+                                          "text": "2019-02-01"
+                                        },
+                                        {
+                                          "name": "n1:RecordPeriodEndDate",
+                                          "text": "2019-02-28"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "n1:Payroll",
+                                      "children": [
+                                        {
+                                          "name": "n1:TypeOfTransaction",
+                                          "text": "PPN"
+                                        },
+                                        {
+                                          "name": "n1:PayRateType"
+                                        },
+                                        {
+                                          "name": "n1:PayRate",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ReportableEarnings",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:ScheduledFullTimeHoursPerWeek",
+                                          "text": "0"
+                                        },
+                                        {
+                                          "name": "n1:TotalHoursWorked",
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
