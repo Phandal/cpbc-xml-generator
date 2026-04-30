@@ -7,6 +7,7 @@
     "generate:config": "npm run build && node dist/index-config.js res/sample.xml res/config-test.json",
     "generate:output": "npm run build && node dist/index-output.js res/config.json res/input.json",
     "build": "tsc",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
